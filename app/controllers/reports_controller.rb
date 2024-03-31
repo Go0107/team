@@ -13,6 +13,12 @@ class ReportsController < ApplicationController
       @report = Report.new(report_params)
       if @report.save
         redirect_to reports_path
+
+        @current_user = current_user
+
+        @user_awards = UserAward.find_by(user_id: @current_user.id)
+        @user_awards.award_1 = true
+        @user_awards.save
       else
         render :new
       end
