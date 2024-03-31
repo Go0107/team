@@ -15,5 +15,6 @@ class UserAwardsController < ApplicationController
     @current_user = current_user
 
     @user_awards = UserAward.find_by(user_id: @current_user.id)
+    puts @user_awards.award_1
   end
 end

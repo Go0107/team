@@ -26,6 +26,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       award_9: false,
       award_10: false,
     )
+    @user_awards.save
   end
 
   # GET /resource/edit
