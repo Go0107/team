@@ -45,6 +45,10 @@
     padding: 10px;
 }
 
+.my-journal:not {
+    border: none;
+}
+
 .my-journals-title h1 {
     padding-left: 30px;
 }
