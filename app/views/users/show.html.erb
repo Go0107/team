@@ -1,0 +1,34 @@
+<div class="profile">
+    <img src="https://tadworks.jp/wp-content/uploads/2020/08/profile_icon.png">
+    <div class="profile-content">
+        <h2><%= @user.name %></h2>
+        <p><%= @user.email %></p>
+    </div>
+</div>
+<div class="my-journals">
+    <div class="container">
+        <div class="my-journals-title">
+            <h1>過去の投稿</h1>
+        </div>
+        <%# each文にする %>
+        <div class="my-journal">
+            <%# 日報の中身 %>
+            <div class="journal-body">
+                <p class="journal-date">3/30</p>
+                <div class="content">
+                    <p>【学習時間】</p>
+                    <p class="content-body">5時間</p>
+                </div>
+                <div class="content">
+                    <p>【学習内容】</p>
+                    <p class="content-body">チーム開発、Paiza</p>
+                </div>
+                <div class="content">
+                    <p>【振り返り】</p>
+                    <p class="content-body">チーム開発のページのフロントを作りました。アプリ全体がシンプルなデザインになっているので、それに合わせて作っていくのが面白いです。
+                    またRubyのバージョン違う問題は解決しませんでしたが、どういう風に進めていくか決められたので良かったです。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

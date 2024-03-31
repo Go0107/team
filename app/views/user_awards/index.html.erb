@@ -1,0 +1,26 @@
+<div class="title">
+    <div class="container">
+        <h1>アワード一覧</h1>
+    </div>
+</div>
+<div class="main-wrapper">
+    <div class="container">
+        <!-- each文でアワードを入れるのもあり -->
+        <% @awards.each do |award| %>
+            <div class="one-award">
+                <div class="award-title">
+                    <p><%= award %></p>
+                </div>
+                <% if @user_awards %>
+                    <div class="award-bool">
+                        <img class="yes" src="https://www.bezybox.net/sozai/wp-content/uploads/2020/05/medal-icon01_1200x630.png" alt="">
+                    </div>
+                <% else %>
+                    <div class="award-bool not">
+                        <img class="no" src="https://clipground.com/images/grey-circle-png-9.png" alt="">
+                    </div>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+</div>
